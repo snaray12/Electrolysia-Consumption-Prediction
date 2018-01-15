@@ -12,7 +12,7 @@ source(file = './electronavia_rf.R')
 
 #source(file = './electronavia_arima.R')
 
-daily_data <- read.csv('./01_Datasets/11_av/electricity-consumption/train.csv',
+daily_data <- read.csv('./data/train.csv',
                  stringsAsFactors = F,
                  header = T)
 
@@ -31,7 +31,7 @@ fit <- rfmodel(train, validation)
 ## ------ ##
 
 
-test <- read.csv('01_Datasets/11_av/electricity-consumption/test.csv',
+test <- read.csv('./data/test.csv',
                  stringsAsFactors = F,
                  header = T)
 
